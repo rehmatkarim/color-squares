@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./squares.css";
 const ColorSquares = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
   const colors = [
     "red",
     "orange",
@@ -14,12 +14,12 @@ const ColorSquares = () => {
     "grey"
   ];
   const changeBgColor = (event) => {
-    let id = event.target.getAttribute("data-index");
-    let ind = parseInt(id, 10);
-    let i = ind < colors.length ? (ind += 1) : 0;
+    // let id = event.target.getAttribute("data-index");
+    // let ind = parseInt(id, 10);
+    // let i = ind < colors.length ? (ind += 1) : 0;
 
-    setCurrentIndex(i);
-    console.log(currentIndex);
+    // setCurrentIndex(i);
+    // console.log(currentIndex);
     //  const color = colors[currentIndex%colors.length];
 
     const color = colors[Math.floor(Math.random() * colors.length)];
